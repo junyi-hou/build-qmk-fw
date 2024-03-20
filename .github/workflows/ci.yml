@@ -25,3 +25,7 @@ jobs:
           keyboard: tokyokeyboard/tokyo60
           keymap: testing-keymap
           local-keymap-path: test/keymaps/testing-keymap
+      - uses: actions/upload-artifact@v4
+        with:
+          name: built-images
+          path: qmk-output
