@@ -1,7 +1,9 @@
 #pragma once
 
-#define HOLD_ON_OTHER_KEY_PRESS
+/* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
+#define LOCKING_SUPPORT_ENABLE
 
-#undef ENABLE_RGB_MATRIX_PIXEL_FLOW
-#undef ENABLE_RGB_MATRIX_PIXEL_FRACTAL
-#undef ENABLE_RGB_MATRIX_PIXEL_RAIN
+/* Locking resynchronize hack */
+#define LOCKING_RESYNC_ENABLE
+
+#define HOLD_ON_OTHER_KEY_PRESS
