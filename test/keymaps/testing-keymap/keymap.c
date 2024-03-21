@@ -3,6 +3,19 @@
 #define BL 0
 #define FN 1
 #define RS 2
+
+/* turn on hold-on-other-key for LCTL_T(KC_ESC) */
+bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LCTL_T(KC_ESC):
+            // Immediately select the hold action when another key is pressed.
+            return true;
+        default:
+            // Do not select the hold action when another key is pressed.
+            return false;
+    }
+}
+
 /*
  * Default HHKB Layout
  */

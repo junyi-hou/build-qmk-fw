@@ -6,4 +6,5 @@
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
-#define HOLD_ON_OTHER_KEY_PRESS
+/* enable only for LCtr_T(KC_ESC) */
+#define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
